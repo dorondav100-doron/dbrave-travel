@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>D Brave Travel | עבודה מהבית ומכל מקום בעולם</title>
+<meta name="description" content="D Brave Travel מגייסת סוכני מכירות מהבית. לוח בקרה, תוכנת מלונות עם מעל 40,000 מלונות במחירים מתחת לבוקינג ותוכנת טיסות. 3 שעות ביום. 050-8472828">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Heebo:wght@400;700;900&family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#1475BC;
+  --sky-deep:#0B4F82;
+  --sky-tint:#EAF3FB;
+  --sky-line:#C7DFF1;
+  --sun:#FBBD14;
+  --sun-soft:#FFE9A8;
+  --ink:#0E2F4A;
+  --slate:#587D99;
+  --white:#FFFFFF;
+  --r:26px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--white);color:var(--ink);font-family:"Assistant",system-ui,sans-serif;font-weight:400;line-height:1.7;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:"Secular One",sans-serif;font-weight:400;line-height:1.12;letter-spacing:-.01em}
+.num{font-family:"Heebo",sans-serif;font-weight:900;direction:ltr;letter-spacing:-.02em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.hole{border-radius:50% / 14%}
+.window{position:relative;border-radius:44% 44% 44% 44% / 22% 22% 22% 22%;overflow:hidden;background:var(--sky)}
+header.bar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--sky-line)}
+.bar .wrap{display:flex;align-items:center;gap:12px;padding-block:11px}
+.logo{display:flex;align-items:center;gap:11px;min-width:0}
+.logo .mk{width:38px;height:46px;flex:none}
+.logo b{font-family:"Secular One";font-size:20px;color:var(--sky);display:block;line-height:1}
+.logo small{font-size:11px;color:var(--slate);letter-spacing:.02em}
+.bar .call{margin-inline-start:auto;background:var(--sun);color:var(--ink);font-family:"Heebo";font-weight:900;font-size:14.5px;padding:9px 15px;border-radius:999px;white-space:nowrap;transition:transform .2s,box-shadow .2s}
+.bar .call:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(251,189,20,.45)}
+.hero{position:relative;padding:34px 0 54px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset-inline:-10%;top:-320px;height:640px;z-index:-2;background:radial-gradient(closest-side,rgba(20,117,188,.13),transparent 70%)}
+.hero-grid{display:grid;gap:34px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:var(--sky-tint);color:var(--sky);font-weight:700;font-size:13.5px;letter-spacing:.02em;padding:7px 14px;border-radius:999px;border:1px solid var(--sky-line);margin-bottom:16px}
+.kicker i{width:7px;height:7px;border-radius:50%;background:var(--sun);display:block;animation:blip 2.4s ease-in-out infinite}
+@keyframes blip{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+h1{font-size:clamp(33px,8.6vw,60px);color:var(--ink)}
+h1 .hl{position:relative;color:var(--sky);white-space:nowrap}
+.hl::after{content:"";position:absolute;inset-inline:-2px;bottom:.06em;height:.32em;background:var(--sun-soft);z-index:-1;border-radius:3px;transform-origin:right center;animation:swipe .9s .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes swipe{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.sub{margin-top:18px;font-size:clamp(16.5px,4.3vw,19.5px);color:#3D6480;max-width:36ch}
+.cta{display:flex;flex-wrap:wrap;gap:11px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:"Heebo";font-weight:900;font-size:17px;padding:16px 26px;border-radius:999px;transition:transform .2s,box-shadow .2s,background .2s}
+.btn svg{width:19px;height:19px;fill:currentColor;flex:none}
+.btn-p{background:var(--sky);color:#fff;box-shadow:0 10px 24px rgba(20,117,188,.3)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(20,117,188,.42)}
+.btn-s{background:#fff;color:var(--sky);border:1.5px solid var(--sky-line)}
+.btn-s:hover{background:var(--sky-tint);transform:translateY(-2px)}
+.tagline{margin-top:20px;color:var(--sky);font-family:"Secular One";font-size:17px}
+.art{position:relative;justify-self:center;width:min(340px,86vw)}
+.art .window{aspect-ratio:1/1.22;box-shadow:0 26px 60px rgba(11,79,130,.28);border:9px solid #fff;outline:1px solid var(--sky-line)}
+.art .float{animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.rays{transform-origin:50% 62%;animation:spin 44s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.road{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.4s .3s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.plane{offset-path:path("M 20 150 C 70 120, 130 105, 180 62");offset-rotate:auto;animation:fly 6s 1s ease-in-out infinite}
+@keyframes fly{0%{offset-distance:0%;opacity:0}12%{opacity:1}88%{opacity:1}100%{offset-distance:100%;opacity:0}}
+.badge{position:absolute;background:#fff;border-radius:16px;padding:11px 15px;box-shadow:0 12px 30px rgba(11,79,130,.18);border:1px solid var(--sky-line);display:flex;align-items:center;gap:9px;font-weight:700;font-size:13.5px}
+.badge .n{font-family:"Heebo";font-weight:900;color:var(--sky);font-size:17px;direction:ltr}
+.badge.b1{inset-inline-start:-14px;top:16%;animation:float 6s ease-in-out infinite}
+.badge.b2{inset-inline-end:-10px;bottom:12%;animation:float 6s .8s ease-in-out infinite}
+.band{background:var(--sky);color:#fff;overflow:hidden;padding:13px 0;white-space:nowrap}
+.band .row{display:inline-block;animation:slide 30s linear infinite}
+.band span{display:inline-block;padding-inline-end:34px;font-family:"Secular One";font-size:15px;opacity:.95}
+.band span::before{content:"✦";color:var(--sun);padding-inline-end:34px}
+@keyframes slide{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+section{padding:62px 0}
+.blue{background:var(--sky);color:#fff}
+.tint{background:var(--sky-tint)}
+.eyebrow{display:block;color:var(--sky);font-weight:700;font-size:13px;letter-spacing:.16em;margin-bottom:12px}
+.blue .eyebrow{color:var(--sun)}
+h2{font-size:clamp(27px,6.8vw,42px);margin-bottom:12px}
+.lead{font-size:17px;color:#3D6480;max-width:54ch}
+.blue .lead{color:#D8EAF7}
+.tools{display:grid;gap:16px;margin-top:34px}
+.tool{background:#fff;border:1px solid var(--sky-line);border-radius:22px;padding:26px 22px;transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s}
+.tool:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(11,79,130,.14)}
+.tool .win{width:64px;height:78px;background:var(--sky);border-radius:44% 44% 44% 44% / 22% 22% 22% 22%;display:grid;place-items:center;margin-bottom:16px}
+.tool .win svg{width:32px;height:32px;fill:var(--sun)}
+.tool h3{font-size:21px;margin-bottom:6px;color:var(--ink)}
+.tool p{font-size:15.5px;color:#4A6E88}
+.gap{margin-top:34px;background:#fff;border-radius:26px;padding:26px 22px;box-shadow:0 20px 50px rgba(11,79,130,.16)}
+.vs{display:grid;gap:22px}
+.pr .who{font-weight:700;font-size:14px;color:var(--slate);display:flex;justify-content:space-between;align-items:baseline}
+.pr .who b{font-family:"Heebo";font-weight:900;font-size:clamp(24px,7vw,34px);color:var(--ink);direction:ltr}
+.pr .track{height:16px;background:var(--sky-tint);border-radius:999px;margin-top:9px;overflow:hidden}
+.pr .fill{height:100%;width:0;border-radius:999px;transition:width 1.3s cubic-bezier(.2,.8,.2,1)}
+.pr.them .fill{background:#B9CEDD}
+.pr.us .who b{color:var(--sky)}
+.pr.us .fill{background:linear-gradient(90deg,var(--sun),#F0A800)}
+.saved{margin-top:20px;background:var(--sun);color:var(--ink);border-radius:16px;padding:14px 18px;display:flex;align-items:center;gap:12px;font-family:"Secular One";font-size:clamp(16px,4.6vw,21px)}
+.saved .num{font-size:1.25em}
+.fineprint{font-size:12.5px;color:var(--slate);margin-top:16px;max-width:62ch}
+.blue .fineprint{color:#B9D6EC}
+.inc{display:grid;gap:16px;margin-top:32px}
+.inc div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);border-radius:22px;padding:26px 20px;text-align:center;backdrop-filter:blur(4px)}
+.inc b{display:block;font-family:"Heebo";font-weight:900;font-size:clamp(34px,10vw,54px);color:var(--sun);direction:ltr}
+.inc span{font-size:15px;color:#E2F0FA}
+.checks{margin-top:30px;display:grid;gap:12px}
+.checks div{display:flex;gap:13px;align-items:flex-start;background:#fff;border:1px solid var(--sky-line);border-radius:16px;padding:15px 17px}
+.checks .tick{width:26px;height:32px;flex:none;background:var(--sky);border-radius:44% 44% 44% 44% / 22% 22% 22% 22%;display:grid;place-items:center}
+.checks .tick svg{width:14px;height:14px;fill:var(--sun)}
+.checks p{font-size:16px;color:#2C5471}
+.card{max-width:560px;margin:34px auto 0;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 26px 60px rgba(11,79,130,.2);border:1px solid var(--sky-line)}
+.card-top{background:var(--sky);color:#fff;padding:20px 24px;display:flex;align-items:center;gap:12px}
+.card-top .mk{width:32px;height:39px;flex:none}
+.card-top b{font-family:"Secular One";font-size:18px;display:block;line-height:1.15}
+.card-top small{font-size:12px;color:#CFE6F6}
+.card-body{padding:24px 22px 26px}
+.field{margin-bottom:15px}
+.field label{display:block;font-weight:700;font-size:13.5px;color:#456A85;margin-bottom:6px}
+.field input,.field select{width:100%;padding:14px 15px;font-family:"Assistant";font-size:16px;color:var(--ink);border:1.5px solid var(--sky-line);border-radius:13px;background:#FAFDFF;transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 4px rgba(20,117,188,.14)}
+.send{width:100%;border:0;cursor:pointer;background:var(--sun);color:var(--ink);font-family:"Heebo";font-weight:900;font-size:18px;padding:17px;border-radius:999px;transition:transform .2s,box-shadow .2s}
+.send:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(251,189,20,.5)}
+.hint{text-align:center;font-size:13px;color:var(--slate);margin-top:12px}
+.final{text-align:center}
+.final h2{color:#fff}
+.contact{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:24px}
+.phone{font-family:"Heebo";font-weight:900;font-size:clamp(30px,9vw,48px);color:var(--sun);direction:ltr;display:inline-block;transition:transform .2s}
+.phone:hover{transform:scale(1.03)}
+.mail{color:#DCEDF8;font-size:16px;direction:ltr;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:2px}
+footer{background:var(--sky-deep);color:#BBD8EC;text-align:center;padding:26px 0 84px;font-size:13.5px}
+footer b{font-family:"Secular One";color:#fff;font-size:16px;display:block;margin-bottom:4px}
+.dock{position:fixed;inset-inline:0;bottom:0;z-index:60;display:flex;gap:1px;box-shadow:0 -6px 20px rgba(11,79,130,.18)}
+.dock a{flex:1;text-align:center;padding:15px 6px;font-family:"Heebo";font-weight:900;font-size:15.5px}
+.dock .w{background:var(--sun);color:var(--ink)}
+.dock .c{background:var(--sky);color:#fff}
+@media(min-width:900px){.dock{display:none}footer{padding-bottom:26px}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+@media(min-width:900px){section{padding:88px 0}.hero{padding:56px 0 80px}.hero-grid{grid-template-columns:1.05fr .95fr;gap:50px}.art{width:400px}.tools{grid-template-columns:repeat(3,1fr);gap:20px}.vs{grid-template-columns:1fr 1fr;gap:28px}.inc{grid-template-columns:1fr 1fr;gap:20px}.checks{grid-template-columns:1fr 1fr}.gap{padding:34px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.road{stroke-dashoffset:0}.hl::after{transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 80 98">
+    <rect x="3" y="3" width="74" height="92" rx="33" ry="30" fill="none" stroke="currentColor" stroke-width="6"/>
+    <clipPath id="cw"><rect x="11" y="11" width="58" height="76" rx="26" ry="23"/></clipPath>
+    <g clip-path="url(#cw)">
+      <g fill="#FBBD14">
+        <polygon points="16,66 68,20 68,30"/><polygon points="16,66 68,32 68,40"/>
+        <polygon points="16,66 66,44 66,52"/><polygon points="16,66 56,14 62,18"/>
+        <polygon points="16,66 44,12 52,14"/><polygon points="16,66 32,11 40,11"/>
+      </g>
+      <path d="M8 78 C 26 70, 34 60, 68 44" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M8 88 C 30 80, 40 72, 70 56" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" opacity=".85"/>
+    </g>
+  </symbol>
+</svg>
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <span class="mk" style="color:var(--sky)"><svg viewBox="0 0 80 98" width="38" height="46"><use href="#mark"/></svg></span>
+      <span><b>D Brave Travel</b><small>איתך בכל דרך.</small></span>
+    </a>
+    <a class="call" href="tel:0508472828">050-8472828</a>
+  </div>
+</header>
+<main id="top">
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker"><i></i> דרושים סוכני מכירות · עבודה מהבית</span>
+      <h1>עבודה מהבית<br>ומ<span class="hl">כל מקום בעולם</span></h1>
+      <p class="sub">אנחנו מלווים אתכם להצלחה שלכם — עם לוח בקרה אישי, תוכנת מלונות ותוכנת טיסות. כל מה שצריך זה 3 שעות פנויות ביום.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="#הרשמה">
+          <svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+          אני רוצה להצטרף
+        </a>
+        <a class="btn btn-s" href="https://wa.me/972508472828" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1a13 13 0 0 1-6-5.2c-.5-.8-.8-1.7-.8-2.5 0-.8.4-1.4.7-1.7.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6a9 9 0 0 0 3.9 3.3c.3.1.5.1.6-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.4.4v.6z"/></svg>
+          וואטסאפ
+        </a>
+      </div>
+      <p class="tagline">איתך בכל דרך.</p>
+    </div>
+    <div class="art">
+      <div class="window float">
+        <svg viewBox="0 0 200 244" aria-label="חלון מטוס עם זריחה ודרך">
+          <rect width="200" height="244" fill="#1475BC"/>
+          <g class="rays" opacity=".95">
+            <g fill="#FBBD14">
+              <polygon points="30,152 210,20 210,44"/><polygon points="30,152 210,52 210,74"/>
+              <polygon points="30,152 205,86 205,108"/><polygon points="30,152 170,4 190,12"/>
+              <polygon points="30,152 120,-10 142,-4"/><polygon points="30,152 70,-14 92,-14"/>
+            </g>
+          </g>
+          <circle cx="150" cy="52" r="15" fill="#FFE9A8" opacity=".55"/>
+          <circle cx="150" cy="52" r="9" fill="#FFD34D"/>
+          <path class="road" d="M-10 214 C 46 190, 78 168, 210 106" stroke="#fff" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <path class="road" d="M-10 240 C 60 216, 96 196, 214 138" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" opacity=".75" style="animation-delay:.6s"/>
+          <g class="plane"><path d="M0 0 L14 5 L0 10 L4 5 Z" fill="#fff"/></g>
+        </svg>
+      </div>
+      <span class="badge b1"><span class="num" data-count="40000" data-suffix="+">0</span> מלונות בעולם</span>
+      <span class="badge b2">מחירים <span class="num">מתחת</span> לבוקינג</span>
+    </div>
+  </div>
+</div>
+<div class="band" aria-hidden="true">
+  <div class="row">
+    <span>לוח בקרה אישי</span><span>תוכנת מלונות</span><span>תוכנת טיסות</span><span>ליווי צמוד</span><span>3 שעות ביום</span><span>עבודה מכל מקום בעולם</span>
+    <span>לוח בקרה אישי</span><span>תוכנת מלונות</span><span>תוכנת טיסות</span><span>ליווי צמוד</span><span>3 שעות ביום</span><span>עבודה מכל מקום בעולם</span>
+  </div>
+</div>
+<section class="tint">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">מה אתם מקבלים</span>
+      <h2>אתם לא לבד בדרך</h2>
+      <p class="lead">אנחנו מלווים אתכם להצלחה שלכם לאורך כל הדרך — ומעמידים לרשותכם את אותן מערכות שסוכני נסיעות עובדים איתן.</p>
+    </div>
+    <div class="tools">
+      <div class="tool rv">
+        <span class="win"><svg viewBox="0 0 24 24"><path d="M3 3h18v14H3zm2 2v10h14V5zm-2 14h18v2H3z"/><path d="M7 12h2v-3H7zm4 0h2V7h-2zm4 0h2v-5h-2z" fill="#fff"/></svg></span>
+        <h3>לוח בקרה אישי</h3>
+        <p>כל ההזמנות, הלקוחות והרווחים שלכם במקום אחד — נכנסים מהמחשב או מהנייד, מכל מקום בעולם.</p>
+      </div>
+      <div class="tool rv d1">
+        <span class="win"><svg viewBox="0 0 24 24"><path d="M4 21V6l8-4 8 4v15h-6v-5h-4v5zm4-9h2v-2H8zm6 0h2v-2h-2zM8 9h2V7H8zm6 0h2V7h-2z"/></svg></span>
+        <h3>תוכנת מלונות</h3>
+        <p>מעל <b>40,000 מלונות</b> בכל העולם, זמינים להזמנה ישירות מהמערכת — במחירים שלנו, לא במחירי השוק.</p>
+      </div>
+      <div class="tool rv d2">
+        <span class="win"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></span>
+        <h3>תוכנת טיסות</h3>
+        <p>מוצאים ומזמינים טיסות לכל היעדים באותה מערכת — ומוכרים ללקוח חבילה שלמה של טיסה ומלון.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">היתרון שסוגר עסקאות</span>
+      <h2>המחירים שלנו זולים יותר מבוקינג</h2>
+      <p class="lead">אותו מלון, אותם תאריכים — ופער מחיר שהלקוח רואה במו עיניו. זה מה שהופך שיחה להזמנה.</p>
+    </div>
+    <div class="gap rv" id="gapbox">
+      <div class="vs">
+        <div class="pr them">
+          <span class="who">המחיר בבוקינג <b>₪1,480</b></span>
+          <div class="track"><span class="fill" data-w="100"></span></div>
+        </div>
+        <div class="pr us">
+          <span class="who">המחיר במערכת שלנו <b>₪1,190</b></span>
+          <div class="track"><span class="fill" data-w="80"></span></div>
+        </div>
+      </div>
+      <div class="saved">
+        <span>הלקוח חוסך <span class="num">₪290</span> על 3 לילות</span>
+      </div>
+      <p class="fineprint">הדוגמה להמחשה בלבד. פערי המחירים משתנים לפי מלון, תאריך וזמינות.</p>
+    </div>
+  </div>
+</section>
+<section class="blue">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">כמה מרוויחים</span>
+      <h2>יש כאן סוכנים שסוגרים חודש כזה</h2>
+      <p class="lead">לא כולם מגיעים לשם ולא בחודש הראשון — אבל זה הטווח שסוכנים פעילים אצלנו מגיעים אליו.</p>
+    </div>
+    <div class="inc">
+      <div class="rv"><b><span class="num" data-count="20000" data-prefix="₪">₪0</span></b><span>סוכנים פעילים, בחודש</span></div>
+      <div class="rv d1"><b><span class="num" data-count="50000" data-prefix="₪">₪0</span></b><span>הסוכנים המובילים</span></div>
+    </div>
+    <p class="fineprint">הנתונים משקפים תוצאות של סוכנים קיימים ואינם הבטחה להכנסה. התוצאה תלויה בהיקף ההשקעה, בזמן ובביצועים האישיים.</p>
+  </div>
+</section>
+<section class="tint">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">מי מתאים</span>
+      <h2>בלי ניסיון קודם בתיירות</h2>
+      <p class="lead">אנחנו מלמדים את המערכות ואת המוצר מאפס. מה שצריך להביא זה זמן ורצון.</p>
+    </div>
+    <div class="checks">
+      <div class="rv"><span class="tick"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><p>3 שעות פנויות ביום להשקעה בעסק שלכם</p></div>
+      <div class="rv d1"><span class="tick"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><p>יכולת לנהל שיחה נעימה עם אנשים</p></div>
+      <div class="rv d1"><span class="tick"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><p>מחשב או סמארטפון וחיבור לאינטרנט</p></div>
+      <div class="rv d2"><span class="tick"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><p>רצינות ומוטיבציה — זה עסק, לא תחביב</p></div>
+    </div>
+  </div>
+</section>
+<section id="הרשמה">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">הצעד הראשון</span>
+      <h2>השאירו פרטים, נחזור אליכם היום</h2>
+      <p class="lead">שיחת היכרות של 10 דקות. נסביר בדיוק איך זה עובד, ותחליטו בלי שום התחייבות.</p>
+    </div>
+    <div class="card rv">
+      <div class="card-top">
+        <span class="mk" style="color:#fff"><svg viewBox="0 0 80 98" width="32" height="39"><use href="#mark"/></svg></span>
+        <span><b>D Brave Travel</b><small>טופס הצטרפות לסוכנים</small></span>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <label for="name">שם מלא</label>
+          <input id="name" type="text" placeholder="ישראל ישראלי" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="tel">טלפון</label>
+          <input id="tel" type="tel" inputmode="tel" placeholder="050-000-0000" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="hours">כמה שעות ביום פנויות לכם</label>
+          <select id="hours"><option>3 שעות</option><option>4–6 שעות</option><option>משרה מלאה</option></select>
+        </div>
+        <div class="field">
+          <label for="exp">ניסיון קודם במכירות</label>
+          <select id="exp"><option>ללא ניסיון</option><option>עד שנה</option><option>1–3 שנים</option><option>מעל 3 שנים</option></select>
+        </div>
+        <button class="send" id="send">שליחה בוואטסאפ</button>
+        <p class="hint">אין צורך בקורות חיים בשלב הזה.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="blue final">
+  <div class="wrap">
+    <span class="eyebrow">מעדיפים לדבר</span>
+    <h2>D Brave Travel — זמינים בשבילכם</h2>
+    <div class="contact">
+      <a class="phone" href="tel:0508472828">050-8472828</a>
+      <a class="mail" href="mailto:dbrave288@gmail.com">dbrave288@gmail.com</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <b>D Brave Travel</b>
+    איתך בכל דרך. · עבודה מהבית ומכל מקום בעולם
+  </div>
+</footer>
+<nav class="dock">
+  <a class="w" href="https://wa.me/972508472828" target="_blank" rel="noopener">וואטסאפ</a>
+  <a class="c" href="tel:0508472828">חייגו עכשיו</a>
+</nav>
+<script>
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const io = new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+}),{threshold:.14});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+function fmt(n){return n.toLocaleString('en-US');}
+const cio = new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  const el=e.target, target=+el.dataset.count, pre=el.dataset.prefix||'', suf=el.dataset.suffix||'';
+  cio.unobserve(el);
+  if(reduced){el.textContent=pre+fmt(target)+suf;return;}
+  const dur=1500, t0=performance.now();
+  (function step(t){
+    const p=Math.min((t-t0)/dur,1), e2=1-Math.pow(1-p,3);
+    el.textContent=pre+fmt(Math.round(target*e2))+suf;
+    if(p<1) requestAnimationFrame(step);
+  })(t0);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+const gio = new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  gio.unobserve(e.target);
+  e.target.querySelectorAll('.fill').forEach((f,i)=>setTimeout(()=>f.style.width=f.dataset.w+'%', i*260));
+}),{threshold:.4});
+const gb=document.getElementById('gapbox'); if(gb) gio.observe(gb);
+document.getElementById('send').addEventListener('click',()=>{
+  const n=document.getElementById('name').value.trim();
+  const t=document.getElementById('tel').value.trim();
+  if(!n||!t){alert('נא למלא שם וטלפון כדי שנוכל לחזור אליכם.');return;}
+  const msg='היי D Brave Travel, ראיתי את המודעה ואשמח לפרטים על עבודה מהבית.%0A'+
+    'שם: '+encodeURIComponent(n)+'%0A'+
+    'טלפון: '+encodeURIComponent(t)+'%0A'+
+    'זמינות: '+encodeURIComponent(document.getElementById('hours').value)+'%0A'+
+    'ניסיון: '+encodeURIComponent(document.getElementById('exp').value);
+  window.open('https://wa.me/972508472828?text='+msg,'_blank');
+});
+</script>
+</body>
+  </html>
